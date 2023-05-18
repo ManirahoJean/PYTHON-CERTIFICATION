@@ -19,6 +19,7 @@ host = data[atpos+1: sppos]
 print(host)
 
 # challenge
+
 word = "bananana"
 i = word.find("na")
 print(i)
