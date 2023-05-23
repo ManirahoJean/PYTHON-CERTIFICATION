@@ -50,3 +50,22 @@ print("\n")
 
 c = {'a': 10, 'b': 1, 'c': 22}
 print(sorted([(v, k)for v, k in c.items()]))
+
+# Challenge
+
+lst = []
+for key, val in counts.items():
+    newtup = (val, key)
+    lst.append(newtup)
+lst = sorted(lst, reverse=True)
+print(lst)
+
+# Which does the same thing as the following code?:
+
+print(sorted([(v, k) for k, v in counts.items() ], reverse=True))
+
+print([(k, v) for k, v in counts.items().sorted()])
+
+print(sorted([(v, k) for k, v in counts.keys()]))
+
+print([(k, v) for k, v in counts.values().sort()])
